@@ -1,3 +1,5 @@
+/*fonts imported*/
+
 @font-face {
     font-display: swap;
     font-family: Orbitron;
@@ -68,6 +70,8 @@ body::after {
     z-index: -10;
 }
 
+/* Noisy animation */
+
 @keyframes bg-animation {
     0% {
         transform: translate(0, 0)
@@ -114,6 +118,7 @@ body::after {
     }
 }
 
+/*background blend down*/
 
 #background-blend {
     position: absolute;
@@ -124,6 +129,8 @@ body::after {
     z-index: -1;
     background: linear-gradient(in oklab to bottom, rgb(0, 0, 0) 5%, transparent);
 }
+
+/* Gradient animation */
 
 @property --7-x-position {
     syntax: '<percentage>';
@@ -196,7 +203,7 @@ body::after {
     --10-y-position: 85.2734375%;
     --11-x-position: 55.58593750000001%;
     --11-y-position: 40.74218750000001%;
-
+    /*Color palettes*/
     --palette_accent_black: #000000;
     --palette_accent_white: #ffffff;
 }
@@ -223,7 +230,22 @@ body::after {
     }
 }
 
+/*photo sphere viewer styles*/
 
+.psv-virtual-tour-link {
+    display: none !important;
+}
+
+.psv-panel-content {
+    font-family: FamiljenGrotesk !important;
+}
+
+.psv-panel-close-button {
+    top: 8px !important;
+    right: 16px !important;
+}
+
+/* navigation bar */
 
 nav {
     z-index: 1;
@@ -244,6 +266,7 @@ nav {
     .nav-container {
         margin-left: 1rem;
         margin-right: 1rem;
+        margin-top: 0.5rem;
     }
 }
 
@@ -278,6 +301,8 @@ nav {
     }
 }
 
+/* menu icons */
+
 .nav-icon {
     cursor: pointer;
 }
@@ -310,25 +335,27 @@ nav {
 
 nav ul {
     display: inline-block;
-    margin: 2rem;
     padding: 0;
     list-style: none;
 }
 
 @media screen and (max-width: 600px) {
     nav ul {
+        margin: 1rem;
         margin-left: 1rem;
     }
 }
 
 @media screen and (min-width: 601px) {
     nav ul {
+        margin: 1rem;
         margin-left: 2rem;
     }
 }
 
 @media screen and (min-width: 2400px) {
     nav ul {
+        margin: 2rem;
         margin-left: 4rem;
     }
 }
@@ -340,6 +367,8 @@ nav ul li a {
 #container {
     position: relative;
 }
+
+/* banner video */
 
 #video-container {
     position: relative;
@@ -359,6 +388,8 @@ nav ul li a {
     z-index: -2;
 }
 
+/*video blend up*/
+
 #video-blend {
     background-image: linear-gradient(to bottom, transparent 50%, rgb(0, 0, 0));
     height: 100%;
@@ -368,6 +399,8 @@ nav ul li a {
     top: 0;
     left: 0;
 }
+
+/*logo main nav*/
 
 @media screen and (max-width: 600px) {
     #logo {
@@ -398,24 +431,32 @@ nav ul li a {
     }
 }
 
+/*sections global*/
+
 #sections {
     position: relative;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 200px) {
     #sections {
         margin-left: 1rem;
         margin-right: 1rem;
     }
 }
 
-
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 201px) {
     #sections {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
+}
 
+
+@media screen and (min-width: 600px) {
+    #sections {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -500,6 +541,8 @@ H6 {
     font-weight: 600;
 }
 
+/* Banner tittle main*/
+
 #container_tittle {
     display: block !important;
     width: 50%;
@@ -538,9 +581,11 @@ H6 {
 /*SECTION 02 ****************************************************************/
 
 #section02 {
-    opacity: 1;
+    opacity: 0;
     position: relative;
 }
+
+/*buttons*/
 
 .explore-tag,
 .play-tag {
@@ -567,28 +612,12 @@ H6 {
     cursor: pointer;
 }
 
-@media (hover: hover) {
-
-    .explore-tag:hover,
-    .play-tag:hover {
-        background-color: hsla(0, 0%, 100%, 0.75);
-    }
-}
-
-
-@media screen and (max-width: 600px) {
-
-    .explore-tag:active,
-    .play-tag:active {
-        background-color: hsla(0, 0%, 100%, 0.75);
-
-    }
-}
-
 
 /*VIEWER ****************************************************************/
 /*VIEWER ****************************************************************/
 /*VIEWER ****************************************************************/
+
+/*Cover viewer*/
 
 .cover-v {
     position: absolute;
@@ -619,9 +648,7 @@ H6 {
     display: none;
 }
 
-.psv-virtual-tour-link {
-    display: none !important;
-}
+/* Viewer */
 
 #viewer {
     width: AUTO;
@@ -636,6 +663,12 @@ H6 {
 }
 
 @media screen and (min-width: 200px) {
+    #viewer {
+        height: 10rem;
+    }
+}
+
+@media screen and (min-width: 400px) {
     #viewer {
         height: 12rem;
     }
@@ -671,6 +704,8 @@ H6 {
     }
 }
 
+/*viewer button 02*/
+
 .play-tag {
     position: relative;
     left: 50%;
@@ -683,6 +718,7 @@ H6 {
     animation: pulse 1s ease-out infinite;
 }
 
+/*play-tag animation*/
 
 @keyframes pulse {
     0% {
@@ -704,7 +740,6 @@ H6 {
         outline-color: rgba(255, 255, 255, 0);
         outline-offset: 15px;
     }
-
 }
 
 
@@ -719,6 +754,8 @@ H6 {
     overflow: hidden;
 }
 
+/*photo team*/
+
 .about-team-img {
     height: auto;
     user-select: none;
@@ -727,22 +764,32 @@ H6 {
 
 @media screen and (max-width: 600px) {
     .about-team-img {
-        width: 100%;
-        margin-left: 1rem;
+        position: relative;
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 
 @media screen and (min-width: 601px) {
     .about-team-img {
-        width: 50%;
-        margin-left: 2rem;
+        position: relative;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .about-team-img {
         width: 45%;
+        left: 0;
+        transform: translateX(0%);
         margin-left: 6rem;
     }
 }
@@ -762,6 +809,7 @@ H6 {
     }
 }
 
+/*section 03*/
 
 @media screen and (min-width: 200px) {
     #section03 {
@@ -833,6 +881,8 @@ footer div {
     align-items: center;
 }
 
+/*Footer logos*/
+
 #container_Flogo01,
 #container_Flogo02 {
     width: 40%;
@@ -874,6 +924,8 @@ footer div {
     }
 }
 
+/* footer text block */
+
 #TittleFooter {
     display: flex;
     flex-direction: column;
@@ -889,7 +941,6 @@ footer div {
 footer #TittleFooter p:nth-child(1) {
     margin: 0;
     margin-bottom: 0.4rem;
-
 }
 
 footer #TittleFooter p:nth-child(2) {
@@ -901,6 +952,7 @@ footer #TittleFooter p:nth-child(2) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 2rem;
 }
 
 #footer-textblock .Meta01 {
@@ -908,19 +960,19 @@ footer #TittleFooter p:nth-child(2) {
     user-select: none;
 }
 
-@media screen and (min-width: 200px) {
+@media screen and (max-width: 600px) {
     #footer-textblock {
         margin: auto;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 601px) {
     #footer-textblock {
         margin: auto;
-        margin-left: 6rem;
-        margin-right: 6rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
     }
 }
 
