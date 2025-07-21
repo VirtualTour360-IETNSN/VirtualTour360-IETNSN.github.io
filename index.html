@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Virtual Tour 360, un recorrido por la Institucion Educativa Tecnica Nuestra Señora de Nazareth" />
+    <meta name="keywords"
+        content="Virtual Tour, 360, 180, Panorama, Institucion, Educacion, Project, Boyaca, Colombia" />
+    <meta name="author" content="MMXXV-MCX" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="icons/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Virtual Tour</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/virtual-tour-plugin/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/gallery-plugin/index.css">
+
+    <script src="js/fitty.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap/dist/SplitText.min.js"></script>
+
+    <script src="js/anim.js"></script>
+
+</head>
+
+<body>
+
+    <!-- SECCION 00 - MENU -->
+
+    <nav>
+        <div class="nav-container">
+            <img id="logo" src="resources/logo_main.webp" alt="Logo">
+            <div>
+                <ul>
+                    <li>
+                        <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="_blank"><img class="nav-icon"
+                                src="icons/crown-solid.svg" alt="wikipedia"></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="https://www.capcomusa.com/" target="_blank"><img class="nav-icon"
+                                src="icons/crown-solid.svg" alt="capcom"></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="https://gpuopen.com/" target="_blank"><img class="nav-icon" src="icons/crown-solid.svg"
+                                alt="amd"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECCION 01 - BANNER MAIN -->
+
+    <div id="video-container">
+        <video autoplay muted loop id="video-loop">
+            <source src="resources/cover.webm" type="video/mp4">
+        </video>
+        <div id="video-blend"></div>
+        <section id="section01">
+            <div id="container_tittle">
+                <h1 class="tittle01">VIRTUAL TOUR 360</h1><br>
+                <h2 class="tittle02">INSTITUCION EDUCATIVA TECNICA NUESTRA SEÑORA DE NAZARETH</h2>
+            </div>
+            <div class="explore-tag">
+                <p>EXPLORAR AHORA</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- SECCION 02 - VIEWER 360 -->
+
+    <div id="container">
+        <div id="background-blend"></div>
+        <div id="sections">
+
+            <section id="section02">
+                <div id="viewer">
+                    <div class="cover-v">
+                        <video autoplay loop muted playsinline>
+                            <source src="resources/logo_animation.webm" type="video/webm">
+                        </video>
+                    </div>
+                </div>
+                <div class="play-tag">
+                    <p class="play-txt">INGRESAR</p>
+                </div>
+            </section>
+
+            <!-- SECCION 03 - SOBRE NOSOTROS -->
+
+            <section id="section03">
+                <h2>SOBRE NOSOTROS</h2>
+                <p class="SplitText01">
+                    VIRTUAL TOUR 360 busca crear un recorrido virtual 360° interactivo y atractivo que promueve la
+                    Institución Educativa Técnica Nuestra Señora de Nazareth, facilita la toma de decisiones y fortalece
+                    la identidad institucional.
+                </p>
+                <p class="SplitText01">
+                    Ademas de eso VIRTUAL TOUR 360 se ve como un medio para convertir el recorrido virtual en una
+                    herramienta que líder que incrementara la visibilidad y atraera nuevos estudiantes, fomentando la
+                    innovación y tecnología en la educación.
+                </p>
+                <p class="SplitText01">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, dignissimos? Voluptatibus
+                    tempore, rerum quasi qui laborum fugit. Rerum laboriosam quis nisi, veniam, natus molestiae,
+                    mollitia corporis at! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+                    dignissimos? Voluptatibus tempore, rerum quasi qui laborum fugit. Rerum laboriosam quis nisi,
+                    veniam, natus molestiae, mollitia corporis at! Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Repellat, dignissimos? Voluptatibus tempore, rerum quasi qui laborum fugit. Rerum laboriosam
+                    quis nisi, veniam, natus molestiae, mollitia corporis at!
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <img src="resources/WatchDogs2-01-B.webp" alt="photo group" class="about-team-img">
+
+    <!-- SECCION 04 - FOOTER -->
+
+    <footer>
+        <div>
+            <div id="container_Flogo01">
+                <div class="footer-logo01"><img src="resources/logo_main.webp" alt="Logo"></div>
+            </div>
+            <div id="TittleFooter">
+                <p class="tittle03">VIRTUAL TOUR 360</p>
+                <p class="tittle04">INSTITUCION EDUCATIVA TECNICA NUESTRA SEÑORA DE NAZARETH</p>
+            </div>
+            <div id="container_Flogo02">
+                <div class="footer-logo02"><img src="resources/logoIETNSN.webp" alt="Logo IETNSN"></div>
+            </div>
+        </div>
+        <div id="footer-textblock">
+            <div>
+                <p class="SplitText02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus maxime
+                    in
+                    veritatis tenetur quo
+                    tempore nostrum exercitationem molestiae quam magni consequuntur aliquam iusto, hic, veniam
+                    perspiciatis
+                    facilis repellat ex odio.</p>
+                <p class="SplitText02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus maxime
+                    in
+                    veritatis tenetur quo
+                    tempore nostrum exercitationem molestiae quam magni consequuntur aliquam iusto, hic, veniam
+                    perspiciatis
+                    facilis repellat ex odio.</p>
+            </div>
+            <P class="SplitText02 Meta01">© MMXXV Virtual Tour. Todos los derechos reservados.</P>
+        </div>
+    </footer>
+
+    <!-- MARKERS_PANEL - LINKED -->
+
+    <div id="markers-panel-container" style="display:none"></div>
+
+    <!-- PHOTO SPHERE VIEWER - IMPORT -->
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js",
+                "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.module.js",
+                "@photo-sphere-viewer/virtual-tour-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/virtual-tour-plugin/index.module.js",
+                "@photo-sphere-viewer/markers-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.module.js",
+                "@photo-sphere-viewer/gallery-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/gallery-plugin/index.module.js"
+            }
+        }
+    </script>
+
+    <!-- Scripts -->
+
+
+    <script src="js/viewer.js" type="module"></script>
+
+    <script src="js/main.js" defer></script>
+
+</body>
+
+</html>
