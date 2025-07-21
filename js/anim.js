@@ -6,28 +6,22 @@ addEventListener("DOMContentLoaded", (event) => {
 
     // viewer animation
 
-    gsap.from('#section02', {
-        scrollTrigger: {
-            trigger: '#viewer',
-            start: 'center bottom',
-            end: 'center bottom',
-            markers: false,
-            toggleActions: 'play none reverse none',
-            /*toggleActions: "onEnter onLeave onEnterBack onLeaveBack"*/
+    gsap.fromTo('#section02',
+        { y: 200, opacity: 0 },
+        {
+            scrollTrigger: {
+                trigger: '#viewer',
+                start: 'center bottom',
+                end: 'center bottom',
+                markers: false,
+                toggleActions: 'play none reverse none',
+                /*toggleActions: "onEnter onLeave onEnterBack onLeaveBack"*/
 
-        },
-        y: 200,
-        opacity: 0,
-        duration: 2,
-    });
-
-    /*
-        ScrollSmoother.create({
-            smooth: 1,
-            effects: true,
-            smoothTouch: 0.1,
-        });*/
-
+            },
+            y: 0,
+            opacity: 1,
+            duration: 1.5,
+        });
 
     // split-text animations
 

@@ -1,4 +1,4 @@
-//fitty
+// fitty
 
 document.fonts.ready.then(() => {
 

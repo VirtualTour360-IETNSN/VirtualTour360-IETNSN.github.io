@@ -15,14 +15,14 @@ await fetch('markers_panel.html')
 const nodes = [
     {
         id: 'node-1',
-        panorama: 'panoramics/twilight_sunset.webp',
+        panorama: 'panoramics/CanchaTop_Panorama3_blackB.webp',
         longitude: '-150deg',
         //sphereCorrection: { pan: '-220deg' },
         markers: [
             {
                 id: 'goto-node-2',
                 position: { yaw: '70deg', pitch: '-5deg' },
-                image: 'icons/target-svgrepo-com.svg',
+                image: 'icons/hard-target.svg',
                 size: { width: 48, height: 48 },
                 opacity: 0.75,
                 tooltip: 'El mar',
@@ -30,7 +30,7 @@ const nodes = [
             {
                 id: 'panel-01',
                 position: { yaw: '-150deg', pitch: '15deg' },
-                image: 'icons/center-alt-text-bubble-svgrepo-com.svg',
+                image: 'icons/the-messenger.svg',
                 size: { width: 48, height: 48 },
                 anchor: 'bottom center',
                 zoomLvl: 100,
@@ -43,21 +43,21 @@ const nodes = [
     },
     {
         id: 'node-2',
-        panorama: 'panoramics/IMG_20250608_214752_360.webp',
-        panoData: {
+        panorama: 'panoramics/CanchaDown_Panorama2_blackB.webp',
+        /*panoData: {
             fullWidth: 16384,
             fullHeight: 8192,
             croppedWidth: 8192,
             croppedHeight: 4096,
             croppedX: 4096,
             croppedY: 2048,
-        },
+        },*/
 
         markers: [
             {
                 id: 'goto-node-3',
                 position: { yaw: '-70deg', pitch: '-36deg' },
-                image: 'icons/target-svgrepo-com.svg',
+                image: 'icons/hard-target.svg',
                 size: { width: 48, height: 48 },
                 opacity: 0.75,
                 tooltip: 'A restaurant...',
@@ -65,7 +65,7 @@ const nodes = [
             {
                 id: 'goto-node-1',
                 position: { yaw: '80deg', pitch: '-12deg' },
-                image: 'icons/back-svgrepo-com.svg',
+                image: 'icons/back-to-time.svg',
                 size: { width: 48, height: 48 },
                 opacity: 0.75,
                 tooltip: 'To back',
@@ -73,7 +73,7 @@ const nodes = [
             {
                 id: 'panel-02',
                 position: { yaw: '0deg', pitch: '7deg' },
-                image: 'icons/center-alt-text-bubble-svgrepo-com.svg',
+                image: 'icons/the-messenger.svg',
                 size: { width: 48, height: 48 },
                 anchor: 'bottom center',
                 zoomLvl: 100,
@@ -94,7 +94,7 @@ const nodes = [
             {
                 id: 'goto-node-4',
                 position: { yaw: '-133deg', pitch: '0deg' },
-                image: 'icons/target-svgrepo-com.svg',
+                image: 'icons/hard-target.svg',
                 size: { width: 48, height: 48 },
                 opacity: 0.75,
                 tooltip: 'to terrace',
@@ -102,7 +102,7 @@ const nodes = [
             {
                 id: 'goto-node-2',
                 position: { yaw: '-53deg', pitch: '10deg' },
-                image: 'icons/back-svgrepo-com.svg',
+                image: 'icons/back-to-time.svg',
                 size: { width: 48, height: 48 },
                 opacity: 0.75,
                 tooltip: 'To back',
@@ -110,7 +110,7 @@ const nodes = [
             {
                 id: 'panel-03',
                 position: { yaw: '128deg', pitch: '-2deg' },
-                image: 'icons/center-alt-text-bubble-svgrepo-com.svg',
+                image: 'icons/the-messenger.svg',
                 size: { width: 48, height: 48 },
                 anchor: 'bottom center',
                 zoomLvl: 100,
@@ -137,7 +137,7 @@ const nodes = [
             {
                 id: 'goto-node-5',
                 position: { yaw: '-3deg', pitch: '38deg' },
-                image: 'icons/target-svgrepo-com.svg',
+                image: 'icons/hard-target.svg',
                 size: { width: 48, height: 48 },
                 opacity: 0.75,
                 tooltip: 'to Palermo',
@@ -145,7 +145,7 @@ const nodes = [
             {
                 id: 'goto-node-3',
                 position: { yaw: '31deg', pitch: '0deg' },
-                image: 'icons/back-svgrepo-com.svg',
+                image: 'icons/back-to-time.svg',
                 size: { width: 48, height: 48 },
                 opacity: 0.75,
                 tooltip: 'To back',
@@ -153,7 +153,7 @@ const nodes = [
             {
                 id: 'panel-04',
                 position: { yaw: '-75deg', pitch: '32deg' },
-                image: 'icons/center-alt-text-bubble-svgrepo-com.svg',
+                image: 'icons/the-messenger.svg',
                 size: { width: 48, height: 48 },
                 anchor: 'bottom center',
                 zoomLvl: 100,
@@ -172,7 +172,7 @@ const nodes = [
             {
                 id: 'goto-node-6',
                 position: { yaw: '40deg', pitch: '10deg' },
-                image: 'icons/target-svgrepo-com.svg',
+                image: 'icons/hard-target.svg',
                 size: { width: 48, height: 48 },
                 opacity: 0.75,
                 tooltip: 'A Yokohama',
@@ -180,7 +180,7 @@ const nodes = [
             {
                 id: 'goto-node-4',
                 position: { yaw: '-140deg', pitch: '15deg' },
-                image: 'icons/back-svgrepo-com.svg',
+                image: 'icons/back-to-time.svg',
                 size: { width: 48, height: 48 },
                 opacity: 0.75,
                 tooltip: 'To back',
@@ -188,7 +188,7 @@ const nodes = [
             {
                 id: 'panel-05',
                 position: { yaw: '113deg', pitch: '25deg' },
-                image: 'icons/center-alt-text-bubble-svgrepo-com.svg',
+                image: 'icons/the-messenger.svg',
                 size: { width: 48, height: 48 },
                 anchor: 'bottom center',
                 zoomLvl: 100,
@@ -215,7 +215,7 @@ const nodes = [
             {
                 id: 'goto-node-1',
                 position: { yaw: '-2deg', pitch: '10deg' },
-                image: 'icons/target-svgrepo-com.svg',
+                image: 'icons/hard-target.svg',
                 size: { width: 48, height: 48 },
                 opacity: 0.75,
                 tooltip: 'To Heighborhood...',
@@ -223,7 +223,7 @@ const nodes = [
             {
                 id: 'goto-node-5',
                 position: { yaw: '-73deg', pitch: '-2deg' },
-                image: 'icons/back-svgrepo-com.svg',
+                image: 'icons/back-to-time.svg',
                 size: { width: 48, height: 48 },
                 opacity: 0.75,
                 tooltip: 'To back',
@@ -231,7 +231,7 @@ const nodes = [
             {
                 id: 'panel-06',
                 position: { yaw: '23deg', pitch: '28deg' },
-                image: 'icons/center-alt-text-bubble-svgrepo-com.svg',
+                image: 'icons/the-messenger.svg',
                 size: { width: 48, height: 48 },
                 anchor: 'bottom center',
                 zoomLvl: 100,
@@ -253,6 +253,16 @@ const viewer = new Viewer({
     defaultZoomLvl: 50,
     mousewheelCtrlKey: true,
     navbar: ['zoom', 'markersList', 'fullscreen'],
+    lang: {
+        zoomOut: 'Acercar',
+        zoomIn: 'Alejar',
+        fullscreen: 'Pantalla Completa',
+        markers: 'Marcadores',
+        markersList: 'Marcadores',
+        ctrlZoom: 'Usa CTRL + Scroll para hacer zoom 🐁',
+        loadError: 'Esto no deberia pasar ( ꩜ ᯅ ꩜;)⁭ ⁭',
+        webglError: 'Tu navegador no suporta WebGL (ó﹏ò｡)',
+    },
 
     plugins: [
         [VirtualTourPlugin, {
