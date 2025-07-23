@@ -305,6 +305,7 @@ nav {
 
 .nav-icon {
     cursor: pointer;
+    filter: drop-shadow(0px 0px 25px hsla(0, 0%, 0%, 0.25));
 }
 
 @media screen and (max-width: 600px) {
@@ -314,11 +315,10 @@ nav {
     }
 }
 
-
 @media screen and (min-width: 601px) {
     .nav-icon {
-        width: 2rem;
-        height: 2rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }
 
@@ -401,6 +401,10 @@ nav ul li a {
 }
 
 /*logo main nav*/
+
+#logo {
+    filter: drop-shadow(0px 0px 25px hsla(0, 0%, 0%, 0.5));
+}
 
 @media screen and (max-width: 600px) {
     #logo {
@@ -625,8 +629,7 @@ H6 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image:
-        linear-gradient(to bottom, hsl(0, 0%, 15%), hsl(0, 0%, 0%));
+    background-image: linear-gradient(to bottom, hsl(0, 0%, 15%), hsl(0, 0%, 0%));
     background-repeat: no-repeat;
     background-position: center;
     aspect-ratio: 1 / 1;
@@ -831,6 +834,9 @@ H6 {
     }
 }
 
+#section03 p {
+    line-height: 1.5rem;
+}
 
 @media screen and (max-width: 600px) {
     #section03 p {
@@ -990,6 +996,10 @@ footer #TittleFooter p:nth-child(2) {
         margin-left: 35rem;
         margin-right: 35rem;
     }
+}
+
+#footer-textblock div>* {
+    line-height: 1.5rem;
 }
 
 #footer-textblock div p:nth-child(1) {
