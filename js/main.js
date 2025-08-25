@@ -26,14 +26,18 @@ document.fonts.ready.then(() => {
 
 });
 
+
 // viewer 360 cover
 
+let viewerStatus = false;
+
 document.querySelectorAll('.play-tag').forEach(tag => {
-    tag.addEventListener('click', function () {
+    tag.addEventListener('click', async function () {
         const viewerCover = document.querySelector('.cover-v');
         const viewer = document.getElementById('viewer');
         const btnText = document.querySelector('.play-txt');
         const isCoverHidden = viewerCover.style.display === 'none';
+        const { viewerObj } = await import('./viewer.js');
 
         if (isCoverHidden) {
             // lock viewer
@@ -41,12 +45,24 @@ document.querySelectorAll('.play-tag').forEach(tag => {
             viewerCover.style.pointerEvents = 'auto';
             viewer.style.pointerEvents = 'none';
             btnText.textContent = 'INGRESAR';
+
+            // destroy viewer
+            const psvContainer = viewer.querySelector('.psv-container');
+            if (psvContainer) {
+                psvContainer.remove();
+                viewerStatus = false;
+            }
         } else {
             // unlock viewer
             viewerCover.style.display = 'none';
             viewerCover.style.pointerEvents = 'none';
             viewer.style.pointerEvents = 'auto';
             btnText.textContent = 'SALIR';
+
+            if (!viewerStatus) {
+                viewerObj();
+                viewerStatus = true;
+            }
         }
     });
 });
