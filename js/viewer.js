@@ -343,7 +343,7 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Informacion</b>',
-                    content: document.getElementById('lorem-content06').innerHTML,
+                    content: document.getElementById('lorem-content01').innerHTML,
                     zIndex: 10,
                 }
             ]
@@ -371,7 +371,7 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Informacion</b>',
-                    content: document.getElementById('lorem-content06').innerHTML,
+                    content: document.getElementById('lorem-content01').innerHTML,
                     zIndex: 10,
                 }
             ]
@@ -399,7 +399,7 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Informacion</b>',
-                    content: document.getElementById('lorem-content06').innerHTML,
+                    content: document.getElementById('lorem-content01').innerHTML,
                     zIndex: 10,
                 }
             ]
@@ -427,7 +427,7 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Informacion</b>',
-                    content: document.getElementById('lorem-content06').innerHTML,
+                    content: document.getElementById('lorem-content01').innerHTML,
                     zIndex: 10,
                 }
             ]
@@ -455,7 +455,7 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Informacion</b>',
-                    content: document.getElementById('lorem-content06').innerHTML,
+                    content: document.getElementById('lorem-content01').innerHTML,
                     zIndex: 10,
                 }
             ]
@@ -483,7 +483,7 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Informacion</b>',
-                    content: document.getElementById('lorem-content06').innerHTML,
+                    content: document.getElementById('lorem-content01').innerHTML,
                     zIndex: 10,
                 }
             ]
@@ -511,7 +511,7 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Informacion</b>',
-                    content: document.getElementById('lorem-content06').innerHTML,
+                    content: document.getElementById('lorem-content01').innerHTML,
                     zIndex: 10,
                 }
             ]
@@ -539,7 +539,7 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Informacion</b>',
-                    content: document.getElementById('lorem-content06').innerHTML,
+                    content: document.getElementById('lorem-content01').innerHTML,
                     zIndex: 10,
                 }
             ]
@@ -567,7 +567,7 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Informacion</b>',
-                    content: document.getElementById('lorem-content06').innerHTML,
+                    content: document.getElementById('lorem-content01').innerHTML,
                     zIndex: 10,
                 }
             ]
@@ -595,7 +595,7 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Informacion</b>',
-                    content: document.getElementById('lorem-content06').innerHTML,
+                    content: document.getElementById('lorem-content01').innerHTML,
                     zIndex: 10,
                 }
             ]
@@ -623,7 +623,7 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Informacion</b>',
-                    content: document.getElementById('lorem-content06').innerHTML,
+                    content: document.getElementById('lorem-content01').innerHTML,
                     zIndex: 10,
                 }
             ]
