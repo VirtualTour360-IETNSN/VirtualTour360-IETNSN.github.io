@@ -15,12 +15,22 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/virtual-tour-plugin/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/gallery-plugin/index.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js",
+                "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.module.js",
+                "@photo-sphere-viewer/virtual-tour-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/virtual-tour-plugin/index.module.js",
+                "@photo-sphere-viewer/markers-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.module.js"
+            }
+        }
+    </script>
     <script src="js/fitty.min.js"></script>
     <script src="js/anim.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap/dist/SplitText.min.js"></script>
+    <script src="js/main.js" defer type="module"></script>
 </head>
 
 <body>
@@ -50,8 +60,10 @@
     <!-- SECCION 01 - BANNER MAIN -->
 
     <div id="video-container">
-        <video autoplay muted loop id="video-loop">
-            <source src="resources/cover-static-temp.mp4" type="video/mp4">
+        <video autoplay muted loop preload="none" poster="resources/cover-poster-temp.webp" id="video-loop">
+            <source src="resources/cover-static-tempLarge.mp4" type="video/mp4" media="(min-width: 1200px)">
+            <source src="resources/cover-static-tempMiddle.mp4" type="video/mp4" media="(min-width: 601px)">
+            <source src="resources/cover-static-tempSmall.mp4" type="video/mp4" media="(max-width: 600px)">
         </video>
         <div id="video-blend"></div>
         <section id="section01">
@@ -148,26 +160,6 @@
     <!-- MARKERS_PANEL - LINKED -->
 
     <div id="markers-panel-container" style="display:none"></div>
-
-    <!-- PHOTO SPHERE VIEWER - IMPORT -->
-
-    <script type="importmap">
-        {
-            "imports": {
-                "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js",
-                "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.module.js",
-                "@photo-sphere-viewer/virtual-tour-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/virtual-tour-plugin/index.module.js",
-                "@photo-sphere-viewer/markers-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.module.js",
-                "@photo-sphere-viewer/gallery-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/gallery-plugin/index.module.js"
-            }
-        }
-    </script>
-
-    <!-- Scripts -->
-
-    <script src="js/viewer.js" type="module"></script>
-
-    <script src="js/main.js" defer></script>
 
 </body>
 
