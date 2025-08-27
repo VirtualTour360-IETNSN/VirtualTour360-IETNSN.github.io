@@ -240,6 +240,10 @@ body::after {
     font-family: FamiljenGrotesk !important;
 }
 
+.psv-panel-content p {
+    font-size: 16px;
+}
+
 .psv-panel-close-button {
     top: 8px !important;
     right: 16px !important;
@@ -609,6 +613,7 @@ H6 {
     margin: 0;
     padding: 0;
     user-select: none;
+    pointer-events: none;
 }
 
 .explore-tag {
@@ -1003,9 +1008,9 @@ footer #TittleFooter p:nth-child(2) {
 }
 
 #footer-textblock div p:nth-child(1) {
-    text-align: left;
+    text-align: center;
     width: 100%;
-    margin-right: 2rem;
+    margin-right: 0rem;
 }
 
 #footer-textblock div p:nth-child(2) {
