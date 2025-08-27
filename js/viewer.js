@@ -287,7 +287,7 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Informacion</b>',
-                    content: document.getElementById('lorem-content01').innerHTML,
+                    content: document.getElementById('lorem-content02').innerHTML,
                     zIndex: 10,
                 }
             ]
@@ -315,7 +315,7 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Informacion</b>',
-                    content: document.getElementById('lorem-content01').innerHTML,
+                    content: document.getElementById('lorem-content03').innerHTML,
                     zIndex: 10,
                 }
             ]
@@ -343,7 +343,7 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Informacion</b>',
-                    content: document.getElementById('lorem-content01').innerHTML,
+                    content: document.getElementById('lorem-content04').innerHTML,
                     zIndex: 10,
                 }
             ]
@@ -371,7 +371,7 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Informacion</b>',
-                    content: document.getElementById('lorem-content01').innerHTML,
+                    content: document.getElementById('lorem-content08').innerHTML,
                     zIndex: 10,
                 }
             ]
@@ -399,7 +399,7 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Informacion</b>',
-                    content: document.getElementById('lorem-content01').innerHTML,
+                    content: document.getElementById('lorem-content05').innerHTML,
                     zIndex: 10,
                 }
             ]
@@ -427,7 +427,7 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Informacion</b>',
-                    content: document.getElementById('lorem-content01').innerHTML,
+                    content: document.getElementById('lorem-content07').innerHTML,
                     zIndex: 10,
                 }
             ]
@@ -511,7 +511,7 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Informacion</b>',
-                    content: document.getElementById('lorem-content01').innerHTML,
+                    content: document.getElementById('lorem-content06').innerHTML,
                     zIndex: 10,
                 }
             ]
@@ -539,7 +539,7 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Informacion</b>',
-                    content: document.getElementById('lorem-content01').innerHTML,
+                    content: document.getElementById('lorem-content09').innerHTML,
                     zIndex: 10,
                 }
             ]
@@ -567,7 +567,7 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Informacion</b>',
-                    content: document.getElementById('lorem-content01').innerHTML,
+                    content: document.getElementById('lorem-content10').innerHTML,
                     zIndex: 10,
                 }
             ]
