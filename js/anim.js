@@ -20,12 +20,12 @@ addEventListener("DOMContentLoaded", (event) => {
             },
             y: 0,
             opacity: 1,
-            duration: 1.5,
+            duration: 2,
         });
 
     // split-text animations
 
-    let split01, split02;
+    let split01;
 
     gsap.to('.SplitText01', {
         scrollTrigger: {
@@ -54,31 +54,5 @@ addEventListener("DOMContentLoaded", (event) => {
         }
     });
 
-    gsap.to('.SplitText02', {
-        scrollTrigger: {
-            trigger: '#footer-textblock',
-            start: 'top bottom',
-            toggleActions: 'play none none reverse',
-            onEnter: () => {
-                SplitText.create(".SplitText02", {
-                    type: "lines, words",
-                    mask: "lines",
-                    autoSplit: true,
-                    onSplit(self) {
-                        return gsap.from(self.lines, {
-                            duration: 1,
-                            y: 100,
-                            autoAlpha: 0,
-                            stagger: 0.1,
-                            ease: "expo.out"
-                        });
-                    }
-                });
-            },
-            onLeaveBack: () => {
-                if (split02) split02.revert();
-            }
-        },
-    });
 
 });
