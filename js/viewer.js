@@ -158,7 +158,7 @@ export function viewerObj() {
                     anchor: 'bottom center',
                     zoomLvl: 100,
                     opacity: 0.75,
-                    tooltip: '<b>Rectoria</b>',
+                    tooltip: '<b>Rectoría</b>',
                     zIndex: 10,
                 },
                 {
@@ -185,6 +185,17 @@ export function viewerObj() {
                 },
                 {
                     id: 'panel-05',
+                    position: { yaw: '-62.5deg', pitch: '3deg' },
+                    image: 'icons/the-messenger.svg',
+                    size: { width: 48, height: 48 },
+                    anchor: 'bottom center',
+                    zoomLvl: 100,
+                    opacity: 0.75,
+                    tooltip: '<b>Psicología</b>',
+                    zIndex: 10,
+                },
+                {
+                    id: 'panel-06',
                     position: { yaw: '98.5deg', pitch: '17deg' },
                     image: 'icons/the-messenger.svg',
                     size: { width: 48, height: 48 },
