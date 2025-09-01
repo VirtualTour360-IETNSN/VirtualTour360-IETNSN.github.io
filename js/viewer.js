@@ -148,7 +148,6 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Entrada / Salida</b>',
-                    content: document.getElementById('lorem-content01').innerHTML,
                     zIndex: 10,
                 },
                 {
@@ -160,7 +159,6 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Rectoria</b>',
-                    content: document.getElementById('lorem-content01').innerHTML,
                     zIndex: 10,
                 },
                 {
@@ -172,7 +170,6 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Baño de Hombres</b>',
-                    content: document.getElementById('lorem-content01').innerHTML,
                     zIndex: 10,
                 },
                 {
@@ -184,7 +181,6 @@ export function viewerObj() {
                     zoomLvl: 100,
                     opacity: 0.75,
                     tooltip: '<b>Baño de Mujeres</b>',
-                    content: document.getElementById('lorem-content01').innerHTML,
                     zIndex: 10,
                 },
                 {
@@ -195,8 +191,7 @@ export function viewerObj() {
                     anchor: 'bottom center',
                     zoomLvl: 100,
                     opacity: 0.75,
-                    tooltip: '<b>Taller</b>',
-                    content: document.getElementById('lorem-content01').innerHTML,
+                    tooltip: '<b>Audiovisuales</b>',
                     zIndex: 10,
                 }
             ]
@@ -221,18 +216,6 @@ export function viewerObj() {
                     size: { width: 48, height: 48 },
                     opacity: 0.75,
                     tooltip: 'Cancha Principal',
-                },
-                {
-                    id: 'panel-01',
-                    position: { yaw: '1.5deg', pitch: '-2deg' },
-                    image: 'icons/the-messenger.svg',
-                    size: { width: 48, height: 48 },
-                    anchor: 'bottom center',
-                    zoomLvl: 100,
-                    opacity: 0.75,
-                    tooltip: '<b>Informacion</b>',
-                    content: document.getElementById('lorem-content01').innerHTML,
-                    zIndex: 10,
                 }
             ]
         },
@@ -693,10 +676,10 @@ export function viewerObj() {
         }
         if (marker.id === 'goto-node-6') {
             vtPlugin.setCurrentNode('node-6');
-        }
+        }/*
         if (marker.id === 'goto-node-7') {
             vtPlugin.setCurrentNode('node-7');
-        }
+        }*/
         if (marker.id === 'goto-node-8') {
             vtPlugin.setCurrentNode('node-8');
         }
