@@ -94,3 +94,45 @@ document.querySelector(".explore-tag").addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+
+// reproductor himno
+
+const audio = document.getElementById('audio');
+const btnPlay = document.getElementById('btnPlay');
+const btnStop = document.getElementById('btnStop');
+const iconPlay = document.getElementById('iconPlay');
+
+const playIconPath = 'icons/player-play.svg';
+const pauseIconPath = 'icons/player-pause.svg';
+const stopIconPath = 'icons/player-stop.svg';
+
+function setStopOpacity(isPlaying) {
+    btnStop.style.opacity = isPlaying ? '1' : '0.5';
+}
+
+function setPlayUI(isPlaying) {
+    iconPlay.src = isPlaying ? pauseIconPath : playIconPath;
+    setStopOpacity(isPlaying);
+}
+
+btnPlay.addEventListener('click', async () => {
+    if (audio.paused) {
+        await audio.play();
+        setPlayUI(true);
+    } else {
+        audio.pause();
+        setPlayUI(false);
+    }
+});
+
+btnStop.addEventListener('click', () => {
+    audio.pause();
+    audio.currentTime = 0;
+    setPlayUI(false);
+});
+
+audio.addEventListener('ended', () => {
+    setPlayUI(false);
+});
+
+setPlayUI(false);
