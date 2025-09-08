@@ -861,6 +861,61 @@ H6 {
     }
 }
 
+/* music */
+
+.pill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--palette_accent_black);
+    border: solid 2px hsla(0, 0%, 100%, 0.25);
+    height: 50px;
+    width: max-content;
+    padding: 6px 14px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.btn-stop {
+    opacity: 0.5;
+}
+
+.btn svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--palette_accent_white);
+}
+
+.titleHimno {
+    color: var(--palette_accent_white);
+    font-family: Orbitron;
+    font-size: 0.8rem;
+    font-weight: 300;
+    flex: 1;
+    padding-left: 4px;
+    user-select: none;
+}
+
 
 /*FOOTER ****************************************************************/
 /*FOOTER ****************************************************************/
